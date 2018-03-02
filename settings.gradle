@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'junit5'
+rootProject.name = 'spring-junit'
