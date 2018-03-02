@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // compile 'org.slf4j:slf4j-api:1.7.25'
+    // testCompile 'junit:junit:4.12'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.1.0'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+}
