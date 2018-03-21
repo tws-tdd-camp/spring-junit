@@ -1,17 +1,20 @@
 package demo;
 
+import demo.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
-public class HelloWorldController {
+public class StudentController {
 
     @Autowired
-    NameService service;
+    StudentService service;
 
-    @RequestMapping("/hello")
-    public String index() {
-        return service.getName();
+    @RequestMapping("/students")
+    public List<Student> getAll() {
+        return service.getAll();
     }
 }
